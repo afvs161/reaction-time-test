@@ -1,5 +1,7 @@
 const divs = document.querySelectorAll('.con'),
 	msg = document.querySelector('#result')
+
+let timeout
 let startTime
 let endTime
 
@@ -8,11 +10,18 @@ divs[0].addEventListener('click', () => {
 	divs[0].classList.remove('active')
 	divs[1].classList.add('active')
 
-	setTimeout(() => {
+	timeout = setTimeout(() => {
 		divs[1].classList.remove('active')
 		divs[2].classList.add('active')
 		startTime = performance.now()
 	}, time * 1000)
+})
+
+divs[1].addEventListener('click', () => {
+	divs[1].classList.remove('active')
+	divs[0].classList.add('active')
+	msg.textContent = `too soon`
+	clearTimeout(timeout)
 })
 
 divs[2].addEventListener('click', () => {
