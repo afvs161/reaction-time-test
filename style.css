@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  user-select: none;
+}
+.con {
+	position: fixed;
+	left: 0;
+	height: 0;
+	width: 100vw;
+	height: 100vh;
+
+	font-family: sans-serif;
+	font-size: 4rem;
+	color: white;
+	text-align: center;
+	line-height: 100vh;
+}
+.blue {
+  line-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue div {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+
+.active {
+  z-index: 1;
+}
