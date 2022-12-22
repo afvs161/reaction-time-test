@@ -29,13 +29,13 @@
   transform: translate(-50%);
 }
 .red {
-  background-color: red;
+  background: linear-gradient(#F00000, #DC281E);
 }
 .green {
-  background-color: green;
+  background: linear-gradient(#66ff00, #56ab2f)
 }
 .blue {
-  background-color: blue;
+  background: linear-gradient(#00B4DB, #0083B0);
 }
 
 .active {
