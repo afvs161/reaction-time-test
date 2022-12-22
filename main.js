@@ -28,5 +28,5 @@ divs[2].addEventListener('click', () => {
 	endTime = performance.now()
 	divs[2].classList.remove('active')
 	divs[0].classList.add('active')
-	msg.textContent = `${endTime - startTime} ms`
+	msg.textContent = `${(endTime - startTime).toFixed(0)} ms`
 })
