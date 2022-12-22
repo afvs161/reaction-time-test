@@ -18,12 +18,13 @@
 	line-height: 100vh;
 }
 .blue {
-  line-height: 5rem;
+  line-height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .blue div {
+	width: 100vw;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
