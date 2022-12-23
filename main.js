@@ -17,7 +17,7 @@ divs[0].addEventListener('click', () => {
 		divs[1].classList.remove('active')
 		divs[2].classList.add('active')
 		startTime = performance.now()
-	}, time * 100)
+	}, time * 1000)
 })
 
 divs[1].addEventListener('click', () => {
