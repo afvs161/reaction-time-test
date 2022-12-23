@@ -29,6 +29,13 @@
   left: 50%;
   transform: translate(-50%);
 }
+.best {
+	position: fixed;
+	top: 5px;
+	left: 10px;
+	font-size: 24px;
+	line-height: normal;
+}
 .red {
   background: linear-gradient(#F00000, #DC281E);
 }
