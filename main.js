@@ -7,6 +7,7 @@ let timeout
 let startTime
 let endTime
 let results = []
+let best
 
 divs[0].addEventListener('click', () => {
 	let time = (Math.random() * 3 + 2).toFixed(0)
@@ -37,5 +38,9 @@ divs[2].addEventListener('click', () => {
 	span.textContent = 'click to continue'
 	
 	results.push(last)
-	pb.textContent = `personal best: ${Math.min(...results)} ms`
+	best = Math.min(...results)
+	pb.textContent = `personal best: ${localStorage.getItem("time")} ms`
+	if (localStorage.getItem("time") > best || !localStorage.getItem("time")) {
+		localStorage.setItem("time", best)
+	}
 })
